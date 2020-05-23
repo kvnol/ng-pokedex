@@ -3,11 +3,14 @@
     <h1 class="signin-header__title">Profile</h1>
 
     <nav class="signin-nav">
-
+      <a routerLink="/signup" routerLinkActive="active" class="signin-nav__item">Registration</a>
+      <a routerLink="/" routerLinkActive="active" class="signin-nav__item">Sign in</a>
     </nav>
   </header>
 
-  <div class="signin-social"></div>
+  <div class="signin-social">
+    <span class="signin-social__title">You can sign in with social</span>
+  </div>
 
   <app-form class="signin-form">
     <div class="form-control">

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormSigninComponent } from './form-signin.component';
 import { FormModule } from '../form/form.module';
 import { InputModule } from '../controls/input/input.module';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -11,7 +12,8 @@ import { InputModule } from '../controls/input/input.module';
   imports: [
     CommonModule,
     FormModule,
-    InputModule
+    InputModule,
+    RouterModule
   ],
   exports: [
     FormSigninComponent
