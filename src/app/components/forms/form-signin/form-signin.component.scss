@@ -39,6 +39,9 @@
   }
 
   &-social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: rem(12px) rem(32px);
     background-color: $gray-m;
 
@@ -47,6 +50,16 @@
       font-weight: 300;
       font-size: rem(13px);
       line-height: rem(20px);
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      display: inline-block;
     }
   }
 
