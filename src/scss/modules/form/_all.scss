@@ -1,7 +1,11 @@
 .form {
   &-control {
     &:not(:last-child) {
-      margin-bottom: 20px;
+      margin-bottom: rem(24px);
+    }
+
+    &__wrap {
+      position: relative;
     }
   }
 }

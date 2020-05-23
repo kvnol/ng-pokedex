@@ -1,0 +1,25 @@
+@import 'src/scss/base/imports';
+
+.signin {
+  width: 100%;
+  max-width: rem(474px);
+  margin: 0 auto;
+  background-color: $white;
+
+  &-header {
+    border-bottom: rem(2px) solid $purple-primary;
+
+    &__title {
+      margin: 0;
+      padding: rem(32px);
+      font-size: rem(32px);
+      line-height: rem(40px);
+      font-weight: 700;
+    }
+  }
+
+  &-form {
+    display: block;
+    padding: rem(32px);
+  }
+}

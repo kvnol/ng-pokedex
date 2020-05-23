@@ -1,0 +1,40 @@
+@import 'src/scss/base/imports';
+
+.input {
+  @extend .reset-input;
+  height: rem(56px);
+  padding: rem(16px);
+  background-color: $white;
+  border-radius: rem(4px);
+  box-shadow: $shadow;
+  transition: $transition-inputs;
+  font-size: rem(16px);
+  line-height: rem(24px);
+
+  &:hover {
+    box-shadow: $shadow-hover;
+  }
+
+  &:focus {
+    padding-top: rem(30px);
+    padding-bottom: rem(10px);
+
+    + .label {
+      top: rem(6px);
+      font-size: rem(12px);
+      line-height: rem(20px);
+      transform: none;
+    }
+  }
+}
+
+.label {
+  position: absolute;
+  top: 50%;
+  left: rem(16px);
+  transform: translateY(-50%);
+  font-size: rem(16px);
+  line-height: rem(24px);
+  color: $gray-k;
+  transition: $transition-inputs;
+}
